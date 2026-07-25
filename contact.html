@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — IronVale SMP</title>
+<link rel="icon" href="images/logo.webp">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-seal"></div><div class="loader-text">Forging the Vale…</div></div>
+<div id="cursor-glow"></div><div class="embers"></div><div id="toast"></div>
+
+<header class="navbar"><div class="container nav-inner">
+  <a href="index.html" class="brand"><img src="images/logo.webp" alt="IronVale logo"><span class="brand-text">IRONVALE<small>Survival SMP</small></span></a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="join.html">Join</a>
+    <a href="rules.html">Rules</a>
+    <a href="servers.html">Servers</a>
+    <a href="private-server.html">Private</a>
+    <a href="team.html">Team</a>
+    <a href="store.html">Store</a>
+    <a href="gifts.html">Gifts</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <div class="nav-cta"><a href="join.html" class="btn btn-primary btn-sm">Join Server</a><button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>
+</div></header>
+
+<div class="mobile-drawer">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="join.html">Join</a>
+  <a href="rules.html">Rules</a>
+  <a href="servers.html">Servers</a>
+  <a href="private-server.html">Private Server</a>
+  <a href="team.html">Team</a>
+  <a href="store.html">Store</a>
+  <a href="gifts.html">Gifts</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="join.html" class="btn btn-primary">Join Now</a>
+</div>
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <h1>Contact Us</h1>
+    <p>Questions, partnership requests, or just want to say hi?</p>
+  </div>
+</div>
+<section>
+  <div class="container grid-2" style="align-items:flex-start;">
+    <div class="card" data-reveal="left" style="padding:40px;">
+      <h3 style="margin-bottom:20px;">Send a Message</h3>
+      <form id="contact-form" onsubmit="handleContact(event)">
+        <div style="margin-bottom:16px;">
+          <label style="display:block; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--parchment-dim); margin-bottom:8px;">Name</label>
+          <input required type="text" name="name" style="width:100%; padding:12px 14px; background:rgba(0,0,0,.35); border:1px solid var(--steel-line); border-radius:8px; color:var(--parchment); font-family:var(--font-body);">
+        </div>
+        <div style="margin-bottom:16px;">
+          <label style="display:block; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--parchment-dim); margin-bottom:8px;">Email</label>
+          <input required type="email" name="email" style="width:100%; padding:12px 14px; background:rgba(0,0,0,.35); border:1px solid var(--steel-line); border-radius:8px; color:var(--parchment); font-family:var(--font-body);">
+        </div>
+        <div style="margin-bottom:24px;">
+          <label style="display:block; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--parchment-dim); margin-bottom:8px;">Message</label>
+          <textarea required name="message" rows="5" style="width:100%; padding:12px 14px; background:rgba(0,0,0,.35); border:1px solid var(--steel-line); border-radius:8px; color:var(--parchment); font-family:var(--font-body); resize:vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+    <div data-reveal="right">
+      <div class="card" style="padding:32px; margin-bottom:20px;">
+        <div class="card-icon"><i class="fa-brands fa-discord"></i></div>
+        <h3>Fastest response: Discord</h3>
+        <p style="margin-bottom:20px;">Our community and staff are most active here.</p>
+        <a href="https://discord.gg/UvQsbSrSZM" target="_blank" rel="noopener" class="btn btn-ghost">Open Discord</a>
+      </div>
+      <div class="card" style="padding:32px;">
+        <div class="card-icon"><i class="fa-brands fa-youtube"></i></div>
+        <h3>Business &amp; creator inquiries</h3>
+        <p style="margin-bottom:20px;">For collaborations, reach out via YouTube.</p>
+        <a href="https://youtube.com/@benopxd?si=lnydO-GxLkHNXNi-" target="_blank" rel="noopener" class="btn btn-ghost">Open YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function handleContact(e){
+  e.preventDefault();
+  showToast('Message ready — connect a backend or email service to send it.');
+  e.target.reset();
+}
+</script>
+
+<footer><div class="container">
+  <div class="footer-grid">
+    <div><div class="footer-brand"><img src="images/logo.webp" alt="IronVale logo"><span class="brand-text">IRONVALE</span></div><p style="color:var(--parchment-dim); font-size:14px; max-width:280px;">A pure survival Minecraft SMP. Where legends are forged, one world at a time.</p></div>
+    <div class="footer-col"><h4>Explore</h4><a href="about.html">About</a><a href="join.html">Join</a><a href="rules.html">Rules</a><a href="servers.html">Servers</a><a href="team.html">Team</a></div>
+    <div class="footer-col"><h4>More</h4><a href="private-server.html">Private Server</a><a href="store.html">Store</a><a href="gifts.html">Gifts</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Connect</h4><a href="https://discord.gg/UvQsbSrSZM" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i> Discord</a><a href="https://youtube.com/@benopxd?si=lnydO-GxLkHNXNi-" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> YouTube</a><a href="join.html">IronVale_SMP.aternos.me:11112</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 IronVale SMP. Not affiliated with Mojang or Microsoft.</span><span>Forged with iron, gold and a little fire.</span></div>
+</div></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
