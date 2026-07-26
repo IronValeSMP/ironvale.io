@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
  * designed and ready to go live.
  */
 async function fetchServerStatus() {
-  const JAVA_ADDRESS = "IronVale_SMP.aternos.me:11112";
+  const JAVA_ADDRESS = "ironvale.qd.je";
 
   const els = {
     dot: document.querySelector(".hero-badge .dot"),
